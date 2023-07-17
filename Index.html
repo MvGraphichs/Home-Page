@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MV GRAPHICS</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-color: black;
+        }
+        
+        .back-gound {
+            background-color: black;
+            background-size: cover;
+        }
+        .nav-bar {
+            width: 85%;
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo {
+            width: 180px;
+            cursor: pointer;
+        }
+        
+        .nav-bar ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+        
+        .nav-bar ul li a {
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+        }
+        
+        .nav-bar ul li ::after {
+            content: '';
+            height: 3px;
+            width: 0%;
+            background-color: white;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            transition: 0.5s;
+        }
+        
+        .nav-bar ul li :hover::after {
+            width: 100%;
+        }
+        
+        .Contant {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            color: white;
+        }
+        
+        .Contant h1 {
+            font-size: 100px;
+            margin-top: 80px;
+        }
+        
+        .Contant p {
+            margin: 20px auto;
+            font-weight: 100;
+            line-height: 25px;
+        }
+        
+        .button-1 {
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid color gray;
+            background: transparent;
+            color: white;
+            cursor:pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        span {
+            background-color: white;
+            height: 100%;
+            width: 0;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.4s;
+        }
+        
+        button:hover span {
+            width: 100%;
+        }
+        button:hover {
+            color: black;
+            border: none;
+        }
+        
+        
+        .Contant-1 {
+            font-size: 50px;
+            margin-top: 80px;
+            padding-top: 400px;
+            padding-left: 700px;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-gap: 10px;
+            padding: 10px;
+          }
+          
+          .grid-container > div {
+            text-align: center;
+            padding: 10px 0;
+            font-size: 30px;
+          }
+          
+          .item1 {
+            grid-column: 1 / span 2;
+          }
+        
+          .item1 img {
+            width: 200px;
+          }
+        
+          .item1 h1 {
+            color: white;
+            font-size: 15px;
+          }
+        
+          .item1 p {
+            color: white;
+            font-size: 15px;
+          }
+        
+          .item2 img {
+            width: 200px;
+          }
+        
+          .item2 h1 {
+             color: white;
+             font-size: 15px;
+          }
+        
+          .item2 p {
+            color: white;
+            font-size: 15px;
+          }
+        
+          .item3 img {
+            width: 125px;
+          }
+        
+          .item3 h1 {
+            color: white;
+            font-size: 15px;
+          }
+          
+          .item3 p{
+            color: white;
+            font-size: 15px;
+          } 
+    </style>
+</head>
+<body>
+    <div class="back-gound">
+        <div class="top-line">
+            <div class="nav-bar">
+                <img src="MV GRAPHICS-1.jpg" class="logo" >
+                <ul>
+                    <li><a href="/HTML/Main.html">HOME</a></li>
+                    <li><a href="/HTML/STORE.html">STORE</a></li>
+                    <li><a href="/HTML/About us.html">ABOUT US</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="Contant">
+                <h1>MV GRAPHICS</h1>
+                <p>Imaginary  Arts,Photo Frame,Video Editing,Wedding Invitation</p>
+            <div>
+                <button type="button" class="button-1" onclick="window.location.href='#';"><span></span>ORDER NOW</button>
+                <button type="button" class="button-1" onclick="window.location.href='#';"><span></span>VIEW OUR ARTS</button>
+            </div>     
+            </div>
+
+            <div class="Contant-1">
+                <h1>Our Works</h1>
+            </div>
+
+            <div class="grid-container">
+                <div class="item1"><img src="/WhatsApp Image 2023-07-16 at 15.59.07.jpg" alt="Error"><br><h1>Spider Man MatPainting
+                </h1><p>Price : $5<br>Artist : R.Manigandan<br>Software : Adobe Photo Shop</p></div>
+                <div class="item2"><img src="/WhatsApp Image 2023-07-16 at 16.02.59.jpg" alt="Error">
+                <h1>Wedding Photo</h1><p>Price : 10$<br>Artist : R.Maingandan<br>Software : Adobe Photo Shop</p>
+                </div>
+                <div class="item3"><img src="/WhatsApp Image 2023-07-16 at 18.37.33.jpg" alt="Error"><br><h1>Imaginary Art</h1><p>Price : $15<br>Artist : R.Maingandan<br>Software : Adobe Photo Shop</p></div>  
+                <div class="item4">4</div>
+                <div class="item5">5</div>
+                <div class="item6">6</div>
+                <div class="item7">7</div>
+              </div>
+        </div>
+    </div>
+</body>
+</html>
